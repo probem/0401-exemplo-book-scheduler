@@ -14,4 +14,9 @@ public class bookService {
     public Book createBook(Book book) {
         return br.save(book);
     }
+
+    public Iterable<Book> retornarBooks() {
+        Iterable<Book> books = br.findAll();
+        return books;
+    }
 }

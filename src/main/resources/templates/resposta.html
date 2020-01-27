@@ -8,5 +8,13 @@
 </head>
 <body>
     <h1>Cadastrado com sucesso.</h1>
+
+    <div th:each="book : ${books}">
+        <div>
+            <p><span th:text="${book.name}"></span></p>
+            <p><span th:text="${book.author}"></span></p>
+            <p><span th:text="${book.description}"></span></p>
+        </div>
+    </div>
 </body>
 </html>
